@@ -10,3 +10,8 @@ body {
     width: 800px;
     height: 600px;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
