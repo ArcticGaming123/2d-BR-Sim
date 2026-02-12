@@ -11,9 +11,14 @@
 
     <div id="menu">
         <label>Number of Players (max 32): 
-            <input type="number" id="numPlayers" value="8" min="2" max="32">
+            <input type="number" id="numPlayers" value="4" min="2" max="32">
         </label>
         <br><br>
+
+        <div id="playerNamesContainer">
+            <!-- Player name inputs will appear here -->
+        </div>
+
         <label>Map Size:
             <select id="mapSize">
                 <option value="small">Small</option>
@@ -22,6 +27,7 @@
             </select>
         </label>
         <br><br>
+
         <button id="startBtn">Start Simulation</button>
     </div>
 
