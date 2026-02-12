@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CPU Battle Royale Simulator</title>
+    <title>CPU Battle Royale Simulator - Solos</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
 </head>
 <body>
-    <h1>CPU Battle Royale Simulator</h1>
-    <div id="game-container"></div>
+    <h1>CPU Battle Royale Simulator - Solos</h1>
+
+    <div id="menu">
+        <label>Number of Players (max 32): 
+            <input type="number" id="numPlayers" value="8" min="2" max="32">
+        </label>
+        <br><br>
+        <label>Map Size:
+            <select id="mapSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="big">Big</option>
+            </select>
+        </label>
+        <br><br>
+        <button id="startBtn">Start Simulation</button>
+    </div>
+
+    <div id="game-container" style="display:none;"></div>
+
     <script src="main.js"></script>
 </body>
 </html>
